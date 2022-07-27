@@ -16,3 +16,6 @@ function mudarCorCentro(cor) {
     document.getElementsByClassName('center-content')[0].style.backgroundColor = cor;
 } mudarCorCentro('white')
 
+function ajustandoTexto(texto) {
+    document.getElementsByClassName('title')[0].innerText = texto;
+}ajustandoTexto('Exercício 5.1 - JavaScript')
