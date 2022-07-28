@@ -39,7 +39,7 @@ function maiusculoP(trueOrFalse) {
 
 function consoleP(trueOrFalse) {
     if (trueOrFalse === true) {
-      let conteudo = document.getElementsByTagName('p').innerText;
+      let conteudo = document.getElementsByTagName('p');
     console.log(conteudo);  
     } else {
 
