@@ -55,3 +55,11 @@ criarh3('h33', '<3');
 
 document.querySelector('.main-content').previousElementSibling.classList.add('title');
 
+function alterarClasses(classeAnterior, nomeDaClasse) {
+  document.querySelector(classeAnterior).nextElementSibling.classList.add(nomeDaClasse);  
+}
+alterarClasses('.rigth-content', 'descripition')
+alterarClasses('.descripition', 'descripition')
+
+document.querySelector('.main-content').lastElementChild.classList.add('descripition');  
+
