@@ -3,6 +3,7 @@ let fraseExercicioH1 = document.createElement('h1');
 fraseExercicioH1.innerText = fraseh1;
 document.body.appendChild(fraseExercicioH1);
 
+
 let main = document.createElement('main');
 document.body.appendChild(main);
 document.querySelector('main').classList.add('main-content');
@@ -51,3 +52,6 @@ nome.innerText = frase;
 criarh3('h31','Feliz por chegar até aqui!');
 criarh3('h32','Achei que não conseguiria realizar essa atividade!');
 criarh3('h33', '<3');
+
+document.querySelector('.main-content').previousElementSibling.classList.add('title');
+
