@@ -25,3 +25,8 @@ document.querySelector('.center-content').nextElementSibling.classList.add('left
 let section3loc = document.createElement('section');
 section.appendChild(section3loc);
 document.querySelector('.left-content').nextElementSibling.classList.add('rigth-content');
+
+let img = document.createElement('img');
+section2loc.appendChild(img);
+document.querySelector('.left-content').firstElementChild.classList.add('small-image');
+document.querySelector('.small-image').src="https://picsum.photos/200";
