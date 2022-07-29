@@ -21,3 +21,7 @@ section1loc.appendChild(p);
 let section2loc = document.createElement('section');
 section.appendChild(section2loc);
 document.querySelector('.center-content').nextElementSibling.classList.add('left-content');
+
+let section3loc = document.createElement('section');
+section.appendChild(section3loc);
+document.querySelector('.left-content').nextElementSibling.classList.add('rigth-content');
