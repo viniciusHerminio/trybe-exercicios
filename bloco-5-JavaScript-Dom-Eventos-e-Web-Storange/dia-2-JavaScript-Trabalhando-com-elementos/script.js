@@ -12,3 +12,8 @@ let section2 = document.createElement('section');
 section.appendChild(section2);
 document.querySelector('section').classList.add('center-content');
 
+let fraseP = "Assunto muito complicado!";
+let p = document.createElement('p');
+p.innerText = fraseP;
+section2.appendChild(p);
+
