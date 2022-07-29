@@ -61,5 +61,4 @@ function alterarClasses(classeAnterior, nomeDaClasse) {
 alterarClasses('.rigth-content', 'descripition')
 alterarClasses('.descripition', 'descripition')
 
-document.querySelector('.main-content').lastElementChild.classList.add('descripition');  
-
+document.querySelector('.main-content').lastElementChild.classList.add('descripition');
