@@ -8,12 +8,16 @@ document.body.appendChild(main);
 document.querySelector('main').classList.add('main-content');
 
 let section = document.querySelector('.main-content');
-let section2 = document.createElement('section');
-section.appendChild(section2);
+let section1loc = document.createElement('section');
+section.appendChild(section1loc);
 document.querySelector('section').classList.add('center-content');
 
 let fraseP = "Assunto muito complicado!";
 let p = document.createElement('p');
 p.innerText = fraseP;
-section2.appendChild(p);
+section1loc.appendChild(p);
 
+
+let section2loc = document.createElement('section');
+section.appendChild(section2loc);
+document.querySelector('.main-content').lastChild.classList.add('left-content');
