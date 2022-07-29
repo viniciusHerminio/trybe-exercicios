@@ -43,3 +43,11 @@ for (let index = 0; index < listaNumeros.length; index+=1) {
     ul.appendChild(li);
 }
 
+function criarh3(nome,frase) {
+nome = document.createElement('h3');
+section.appendChild(nome);
+nome.innerText = frase;   
+}
+criarh3('h31','Feliz por chegar até aqui!');
+criarh3('h32','Achei que não conseguiria realizar essa atividade!');
+criarh3('h33', '<3');
