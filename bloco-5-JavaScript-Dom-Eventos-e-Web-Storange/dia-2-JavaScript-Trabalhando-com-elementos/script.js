@@ -20,4 +20,4 @@ section1loc.appendChild(p);
 
 let section2loc = document.createElement('section');
 section.appendChild(section2loc);
-document.querySelector('.main-content').lastChild.classList.add('left-content');
+document.querySelector('.center-content').nextElementSibling.classList.add('left-content');
