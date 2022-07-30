@@ -41,6 +41,7 @@ for (let index = 0; index < listaNumeros.length; index+=1) {
     let element = listaNumeros[index]; 
     let li = document.createElement('li');
     li.innerText = element;
+    li.classList.add('item');
     ul.appendChild(li);
 }
 
@@ -70,3 +71,12 @@ section2.parentNode.removeChild(section2);
 section3loc.style.marginRight = "auto";
 
 section1loc.parentElement.style.backgroundColor = "green";
+
+let listItens = document.querySelectorAll('.item');
+for (let index = 0; index < listItens.length; index+=1) {
+  let element = listItens[index];
+  console.log(element);
+  if (element.innerText === 'nove' || element.innerText === 'dez') {
+    ul.removeChild(element);
+  }
+  }
