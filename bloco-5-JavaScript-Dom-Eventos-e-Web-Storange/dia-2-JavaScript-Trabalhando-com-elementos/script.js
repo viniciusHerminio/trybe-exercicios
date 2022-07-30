@@ -62,3 +62,7 @@ alterarClasses('.rigth-content', 'descripition')
 alterarClasses('.descripition', 'descripition')
 
 document.querySelector('.main-content').lastElementChild.classList.add('descripition');
+
+let main2 = document.querySelector('.main-content');
+section2 = main2.firstChild.nextSibling;
+section2.parentNode.removeChild(section2);
