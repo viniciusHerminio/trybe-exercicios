@@ -66,3 +66,7 @@ document.querySelector('.main-content').lastElementChild.classList.add('descripi
 let main2 = document.querySelector('.main-content');
 section2 = main2.firstChild.nextSibling;
 section2.parentNode.removeChild(section2);
+
+section3loc.style.marginRight = "auto";
+
+section1loc.parentElement.style.backgroundColor = 'green';
