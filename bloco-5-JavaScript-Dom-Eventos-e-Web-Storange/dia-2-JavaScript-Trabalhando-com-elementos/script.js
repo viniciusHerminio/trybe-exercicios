@@ -69,4 +69,4 @@ section2.parentNode.removeChild(section2);
 
 section3loc.style.marginRight = "auto";
 
-section1loc.parentElement.style.backgroundColor = 'green';
+section1loc.parentElement.style.backgroundColor = "green";
