@@ -34,12 +34,23 @@ function createDaysOfTheWeek() {
     }
 let divBotao = document.getElementsByClassName('buttons-container')[0];
 
-function criarBotao(Feriado) {
+function criarBotaoFeriado(Feriado) {
  let botao = document.createElement('button');
 divBotao.appendChild(botao);
-botao.setAttribute('id' , 'btn-holiday');
+botao.setAttribute('id' , "btn-holiday");
 }
-criarBotao()
+criarBotaoFeriado()
 
+let botaoCor = document.getElementById("btn-holiday");
+botaoCor.addEventListener('click' , mudarCor);
 
- 
+function mudarCor() {
+    let holidays = document.getElementsByClassName('holiday');
+    for (let index = 0; index < holidays.length; index+=1) {
+        if (holidays[index].style.backgroundColor == 'white') {
+            holidays[index].style.backgroundColor = 'rgb(238,238,238)';
+        } else {
+            holidays[index].style.backgroundColor = 'white'
+        }
+    }
+}
