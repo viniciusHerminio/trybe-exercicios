@@ -95,3 +95,47 @@ function zoomOut(event) {
     let dias = event.target;
     dias.style.fontSize = '20px';
 }
+
+let tasks = document.getElementsByClassName('my-tasks')[0];
+
+function inputTarefas() {
+  let tasksInput = document.createElement('input');
+  function areaDigitar() {
+    tasks.appendChild(tasksInput);
+    tasksInput.setAttribute('type' , 'text');
+    tasksInput.setAttribute('name' , 'mytasks')
+    tasksInput.setAttribute('placeholder' , 'Escreva sua tarefa');  
+    tasksInput.setAttribute('id' , 'tarefas') 
+  }
+  areaDigitar();
+  function enviarTarefas() {
+    let botaoTarefas = document.createElement ('input');
+    tasks.appendChild(botaoTarefas);
+    botaoTarefas.setAttribute('type' , 'submit');
+    botaoTarefas.setAttribute('value' , 'Adicionar');
+    botaoTarefas.style.marginLeft = '5px';
+    botaoTarefas.setAttribute('id' , 'tarefasBotao');
+  } enviarTarefas();
+
+
+} inputTarefas();
+
+let btn = document.getElementById('tarefasBotao');
+
+btn.addEventListener('click' , sendTarefa);
+
+let listTasks = document.createElement('span');
+tasks.appendChild(listTasks);
+let listUl = document.createElement('ul');
+listTasks.appendChild(listUl);
+function sendTarefa() {
+    const name = document.querySelector('#tarefas')
+    const value = name.value;
+    console.log(value);
+    let listLi = document.createElement('li');
+    listLi.innerText = value;
+    listUl.appendChild(listLi);
+    
+}
+
+
