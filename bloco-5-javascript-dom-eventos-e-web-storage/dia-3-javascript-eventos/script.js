@@ -32,4 +32,14 @@ function createDaysOfTheWeek() {
         }
         listDays.appendChild(day);
     }
+let divBotao = document.getElementsByClassName('buttons-container')[0];
+
+function criarBotao(Feriado) {
+ let botao = document.createElement('button');
+divBotao.appendChild(botao);
+botao.setAttribute('id' , 'btn-holiday');
+}
+criarBotao()
+
+
  
