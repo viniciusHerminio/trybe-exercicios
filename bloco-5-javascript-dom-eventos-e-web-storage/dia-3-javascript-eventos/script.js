@@ -16,6 +16,7 @@ function createDaysOfTheWeek() {
   // Escreva seu código abaixo.
 
   let decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+  let sextaFeira = [4, 11, 18, 25];
 
   let listDays = document.getElementById("days");
 
@@ -23,10 +24,12 @@ function createDaysOfTheWeek() {
         const element = decemberDaysList[key];
         let day = document.createElement("li");
         day.innerText = element;
-        if (element == 24 || element == 25 || element == 31) {
+        if (element == 24 || element == 31) {
             day.classList.add('day' , 'holiday');
-        } else if (element == 4 || element == 11 || element == 18 || element == 25) {
+        } else if (element == 4 || element == 11 || element == 18) {
             day.classList.add('day' , 'friday');
+        } else if (element == 25) {
+            day.classList.add('day' , 'friday', 'holiday')
         } else {
             day.classList.add('day');
         }
@@ -62,3 +65,17 @@ function criarBotaoSextafeira() {
    botao.innerText = 'Sexta-feira';
    }
    criarBotaoSextafeira()
+
+let botaoSextou = document.getElementById("btn-friday");
+botaoSextou.addEventListener('click' , sextou);
+
+function sextou() {
+    let sextas = document.getElementsByClassName('friday');
+    for (let index = 0; index < sextas.length; index+=1) {
+        if (sextas[index].innerText == 'Sextou!') {
+            sextas[index].innerText = sextaFeira[index];
+        } else {
+            sextas[index].innerText = 'Sextou!'
+        }
+    }
+}
