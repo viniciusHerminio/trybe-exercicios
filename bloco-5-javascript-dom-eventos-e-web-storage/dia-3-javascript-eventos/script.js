@@ -79,3 +79,19 @@ function sextou() {
         }
     }
 }
+ let dias = document.getElementsByClassName('day');
+
+for (let index = 0; index < dias.length; index+=1) {
+dias[index].addEventListener('mouseover' , zoomIn);
+}
+function zoomIn(event) {
+    let dias = event.target;
+    dias.style.fontSize = '30px';
+}
+for (let index = 0; index < dias.length; index+=1) {
+    dias[index].addEventListener('mouseleave' , zoomOut);
+}
+function zoomOut(event) {
+    let dias = event.target;
+    dias.style.fontSize = '20px';
+}
