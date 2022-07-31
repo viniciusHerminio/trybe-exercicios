@@ -34,10 +34,11 @@ function createDaysOfTheWeek() {
     }
 let divBotao = document.getElementsByClassName('buttons-container')[0];
 
-function criarBotaoFeriado(Feriado) {
+function criarBotaoFeriado() {
  let botao = document.createElement('button');
 divBotao.appendChild(botao);
 botao.setAttribute('id' , "btn-holiday");
+botao.innerText = 'Feriados';
 }
 criarBotaoFeriado()
 
@@ -54,3 +55,10 @@ function mudarCor() {
         }
     }
 }
+function criarBotaoSextafeira() {
+    let botao = document.createElement('button');
+   divBotao.appendChild(botao);
+   botao.setAttribute('id' , "btn-friday");
+   botao.innerText = 'Sexta-feira';
+   }
+   criarBotaoSextafeira()
