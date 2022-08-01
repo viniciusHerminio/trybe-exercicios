@@ -131,11 +131,34 @@ listTasks.appendChild(listUl);
 function sendTarefa() {
     const name = document.querySelector('#tarefas')
     const value = name.value;
-    console.log(value);
     let listLi = document.createElement('li');
     listLi.innerText = value;
+    listLi.setAttribute('id' , 'itemTarefa');
     listUl.appendChild(listLi);
-    
 }
+let colors = document.getElementsByClassName('input-container')[0];
+let btn2 = document.getElementById('btn-add');
+
+btn2.addEventListener('click' , sendColor);
+let span2 = document.createElement('span');
+colors.appendChild(span2);
+let listUlColor = document.createElement('ul');
+span2.appendChild(listUlColor);
+listUlColor.setAttribute('id' , 'idUlColor');
+function criarLi () {
+    let listLiColor = document.createElement('li');
+    listLiColor.setAttribute('id' , 'colorId');
+    listUlColor.appendChild(listLiColor);
+}criarLi();
+
+
+function sendColor() {
+    const cor = document.querySelector('#task-input')
+    const value2 = cor.value;
+    let alteraCor = document.getElementById('colorId');
+    alteraCor.innerText = value2;
+    alteraCor.style.color = value2;
+}
+
 
 
