@@ -86,7 +86,7 @@ dias[index].addEventListener('mouseover' , zoomIn);
 }
 function zoomIn(event) {
     let dias = event.target;
-    dias.style.fontSize = '30px';
+    dias.style.fontSize = '25px';
 }
 for (let index = 0; index < dias.length; index+=1) {
     dias[index].addEventListener('mouseleave' , zoomOut);
