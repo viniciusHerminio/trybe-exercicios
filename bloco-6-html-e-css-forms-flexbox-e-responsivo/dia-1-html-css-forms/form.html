@@ -12,7 +12,7 @@
         <h1>Trybe Trip</h1>
     </header>
     <form action="" method="get" >
-        <main>
+        <main id="forms-geral">
             <div id="full-name">
                 <label for="nome">Nome:</label>
                 <input type="text" placeholder="Digite seu nome completo!" id="nome">
@@ -35,8 +35,23 @@
                 <label for="dissertacao">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
                 <textarea name="dissertacao" id="dissertacao" cols="30" rows="10" maxlength="500"></textarea>
             </div>
-
+            <div id="get-data">
+                <label for="data">Data :</label>
+                <input type="date" name="data" id="data">
+            </div>
+            <div id="get-termo1">
+                <label for="termo1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+                <input type="checkbox" name="termo1" id="termo1">
+            </div>
+            <div id="get-termo2">
+                <label for="termo2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+                <input type="checkbox" name="termo2" id="termo2">
+            </div>
         </main>
+        <div id="btns">
+            <button type="submit" id="enviar">Enviar</button>
+            <button type="submit" id="apagar">Apagar</button>
+        </div>
     </form>
 </body>
 </html>

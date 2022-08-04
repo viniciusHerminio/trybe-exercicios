@@ -10,3 +10,21 @@
 #dissertacao{
     width: 100%;
 }
+#get-termo1{
+    margin-top: 10px;
+}
+#forms-geral{
+    background-color: rgb(189, 228, 225);
+    border-radius: 5%;
+    padding: 20px;
+}
+header{
+    text-align: center;
+}
+#btns{
+    margin-top: 40px;
+    text-align: center;
+}
+#enviar{
+    margin-right: 200px;
+}
