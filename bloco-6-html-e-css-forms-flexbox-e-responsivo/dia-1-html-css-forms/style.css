@@ -14,17 +14,39 @@
     margin-top: 10px;
 }
 #forms-geral{
-    background-color: rgb(189, 228, 225);
+    background-color: rgba(255, 255, 255, 0.904);
     border-radius: 5%;
     padding: 20px;
+    font-family: normal, sans-serif;
 }
 header{
     text-align: center;
+    margin-top: 100px;
+    font-family: 'Bree Serif', serif;
+    color: rgb(255, 255, 255);
+    line-height: 2px;
+
 }
 #btns{
     margin-top: 40px;
     text-align: center;
 }
 #enviar{
-    margin-right: 200px;
+    margin-right: 100px;
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+}
+#apagar{
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+}
+#div-form{
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 20px;
+}
+body{
+    background-image: url(imagens/03.jpg);
 }
