@@ -81,6 +81,12 @@ const smallerName = () => {
  //console.log(smallerName());
 
  // 5 - Faça uma função que retorne true, se todas as pessoas autoras nasceram no século XX, ou false, caso contrário..
-let pessoas = [];
+
 const everyoneWasBornOnSecXX = (array) => array.every((book) => book.author.birthYear >= 1901); 
-console.log(everyoneWasBornOnSecXX(books));
+//console.log(everyoneWasBornOnSecXX(books));
+
+// 6 - Faça uma função que retorne true, se algum livro foi lançado na década de 80, e false, caso contrário.
+
+const someBookWasReleaseOnThe80s = (array) => array.some((book) => book.releaseYear >= 1980 && book.releaseYear < 1990);
+
+console.log(someBookWasReleaseOnThe80s(books));
