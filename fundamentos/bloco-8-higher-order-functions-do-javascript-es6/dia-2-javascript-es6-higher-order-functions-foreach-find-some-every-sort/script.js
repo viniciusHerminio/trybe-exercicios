@@ -82,16 +82,5 @@ const smallerName = () => {
 
  // 5 - Faça uma função que retorne true, se todas as pessoas autoras nasceram no século XX, ou false, caso contrário..
 let pessoas = [];
-
-const everyoneWasBornOnSecXX = (books) => {
-  books.forEach((book) => {
-  if (book.author.birthYear >= 1901) {
-    pessoas.push(book.id);
-    }});
-    if (pessoas.length === books.length) {
-      return true
-    }  return false
-};
- 
-  
+const everyoneWasBornOnSecXX = (array) => array.every((book) => book.author.birthYear >= 1901); 
 console.log(everyoneWasBornOnSecXX(books));
