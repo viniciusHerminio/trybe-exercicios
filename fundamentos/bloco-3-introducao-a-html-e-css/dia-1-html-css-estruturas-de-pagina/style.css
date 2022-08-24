@@ -1,0 +1,15 @@
+h3:hover{
+    border: 5px solid red;
+}
+body:first-child{
+    color: blue;
+}
+div > h3:first-of-type{
+    color: blue;
+}
+div > h3:last-of-type{
+    color: darksalmon;
+}
+div > h3:only-child{
+    color: brown;
+}
