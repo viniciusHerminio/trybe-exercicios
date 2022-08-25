@@ -75,4 +75,9 @@ const nameAndAge = (array) => array.map((livro) => arrayOrdenado = {age: livro.r
 //3 - Crie um array com todos os objetos que possuem gênero ficção científica ou fantasia.
 
 const fantasyOrScienceFiction = (array) => array.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia');
-console.log(fantasyOrScienceFiction(books));
+//console.log(fantasyOrScienceFiction(books));
+
+//4 - Crie um array formado pelos livros com mais de 60 anos desde sua publicação. Esse array deve ser ordenado do livro mais velho ao mais novo.
+
+const oldBooks0rdered = (array) => array.filter((book) =>(2022 - book.releaseYear) > 60).sort( (a, b) => a.releaseYear < b.releaseYear ? -1 : 1);
+  console.log(oldBooks0rdered(books));
