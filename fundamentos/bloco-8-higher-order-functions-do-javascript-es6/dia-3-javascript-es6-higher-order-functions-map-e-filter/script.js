@@ -80,4 +80,9 @@ const fantasyOrScienceFiction = (array) => array.filter((book) => book.genre ===
 //4 - Crie um array formado pelos livros com mais de 60 anos desde sua publicação. Esse array deve ser ordenado do livro mais velho ao mais novo.
 
 const oldBooks0rdered = (array) => array.filter((book) =>(2022 - book.releaseYear) > 60).sort( (a, b) => a.releaseYear < b.releaseYear ? -1 : 1);
-  console.log(oldBooks0rdered(books));
+//console.log(oldBooks0rdered(books));
+
+//5 - Crie um array em ordem alfabética apenas com os nomes de todas as pessoas autoras de ficção científica ou fantasia.
+
+const fantasy0rScienceFictionAuthors = (array) => array.filter( (book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia');
+console.log(fantasy0rScienceFictionAuthors(books));
