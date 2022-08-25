@@ -91,4 +91,9 @@ const fantasy0rScienceFictionAuthors = (array) => array.filter( (book) => book.g
 //6 - Crie um array com o nome de todos os livros com mais de 60 anos de publicação.
 
 const oldBooks = (array) => array.filter( (book) => (book.releaseYear < 1962)).map((olds) => olds.name)
-  console.log(oldBooks(books));
+//console.log(oldBooks(books));
+
+//7 - Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais.
+
+const authorWith3DotsOnName = (array) => array.find((book) => book.author.name.startsWith('J. R. R.')).name;
+//console.log(authorWith3DotsOnName(books));
