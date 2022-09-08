@@ -1,17 +1,11 @@
-/*4 - Suponha que você precise simular uma mensagem enviada do robô Curiosity de Marte para a Terra. O Curiosity envia para a Terra a temperatura atual em Marte, gastando um tempo variável de até 5 segundos para que termine o envio. Crie a função sendMarsTemperature de forma que:
-A função sendMarsTemperature imprima no console o seguinte texto: "A temperatura de Marte é: temperaturaAtual graus celsius" onde, temperaturaAtual é o valor recebido da função getMarsTemperature; e
-A mensagem deve ser impressa no console depois de no máximo 5 segundos.*/
+beforeEach(() => console.log('1 - beforeEach'));
+afterEach(() => console.log('1 - afterEach'));
 
-const messageDelay = () => Math.floor(Math.random() * 5000);
+test('', () => console.log('1 - test'));
 
-const getMarsTemperature = () => {
-  const maxTemperature = 58;
-  return Math.floor(Math.random() * maxTemperature);
-};
+describe('Scoped / Nested block', () => {
+  beforeEach(() => console.log('2 - beforeEach'));
+  afterEach(() => console.log('2 - afterEach'));
 
-// crie a função sendMarsTemperature abaixo
-
-const sendMarsTemperature = () => {
-   setTimeout(() => console.log(`A temperatura de Marte é: ${getMarsTemperature()} graus celsius`), messageDelay());
-}
- sendMarsTemperature() // Imprime "A temperatura de Marte é: 20 graus celsius", por exemplo
+  test('', () => console.log('2 - test'));
+});
